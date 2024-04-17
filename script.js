@@ -13,7 +13,7 @@ const noBtnRect = noBtn.getBoundingClientRect();
 siBtn.addEventListener('click', () => {
     question.innerHTML = 'Excelente 😎, ¡Gracias!'
     oracion.innerHTML = 'Mi número es: 0414-1427398'
-    img.src = "/Bolita-Elegante.jpg";
+    img.src = "./elegante.jpg";
     noBtn.disabled = true;
 });
 
@@ -24,7 +24,7 @@ noBtn.addEventListener('click', () => {
 
     noBtn.style.left = moverEjeX + 'px';
     noBtn.style.top = moverEjeY + 'px';
-    img.src = "/Bolita-Agonizando.jpg";
+    img.src = "./dolor.jpg";
 
     let currentFontSizeAndWidth = window.getComputedStyle(siBtn).getPropertyValue('font-size', 'width', 'height');
     let newSize = parseFloat(currentFontSizeAndWidth) + 10; // Increase font size by  * 2px
